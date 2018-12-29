@@ -19,12 +19,17 @@ bool Card::operator<(const Card &c) const {
         return suit < c.suit;
 };
 bool Card::operator>(const Card &c) const {
-    return !(*this < c);
+    if(rank != c.rank)
+        return getPowerRank() > c.getPowerRank();
+    else
+        return suit > c.suit;
 };
 bool Card::operator==(const Card &c) const {
     return suit == c.suit && rank == c.rank;
 };
-
+bool Card::beats(const Playable &other) const{
+    return true;
+}
 int Card::getPowerRank() const {
     int pr = rank - 2;
     if(pr <= 0)

@@ -8,19 +8,20 @@
 
 #ifndef Card_hpp
 #define Card_hpp
-
 #include <stdio.h>
 #include <Globals.h>
+#include <Game/Playables.hpp>
 
 const int SUIT_MAX(4);
 const int RANK_MAX(13);
 
-class Card{
+class Card : public Playable{
 public:
     Card(int, int);
     bool operator<(const Card& c) const;
     bool operator>(const Card& c) const;
     bool operator==(const Card& c) const;
+    virtual bool beats(const Playable& other) const;
 private:
     int rank, suit;
     int getPowerRank() const;

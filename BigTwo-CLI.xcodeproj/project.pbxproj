@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		362CAAD821D818690016F634 /* Playables.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 362CAAD621D818690016F634 /* Playables.cpp */; };
 		36CC35F721D80B6E00A6F457 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 36CC35F621D80B6E00A6F457 /* main.cpp */; };
 		36CC360021D80BFD00A6F457 /* Card.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 36CC35FE21D80BFD00A6F457 /* Card.cpp */; };
 /* End PBXBuildFile section */
@@ -24,6 +25,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		362CAAD621D818690016F634 /* Playables.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Playables.cpp; sourceTree = "<group>"; };
+		362CAAD721D818690016F634 /* Playables.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Playables.hpp; sourceTree = "<group>"; };
 		36CC35F321D80B6E00A6F457 /* BigTwo-CLI */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "BigTwo-CLI"; sourceTree = BUILT_PRODUCTS_DIR; };
 		36CC35F621D80B6E00A6F457 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		36CC35FE21D80BFD00A6F457 /* Card.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Card.cpp; sourceTree = "<group>"; };
@@ -73,6 +76,8 @@
 			children = (
 				36CC35FE21D80BFD00A6F457 /* Card.cpp */,
 				36CC35FF21D80BFD00A6F457 /* Card.hpp */,
+				362CAAD621D818690016F634 /* Playables.cpp */,
+				362CAAD721D818690016F634 /* Playables.hpp */,
 			);
 			path = Game;
 			sourceTree = "<group>";
@@ -133,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				362CAAD821D818690016F634 /* Playables.cpp in Sources */,
 				36CC35F721D80B6E00A6F457 /* main.cpp in Sources */,
 				36CC360021D80BFD00A6F457 /* Card.cpp in Sources */,
 			);
