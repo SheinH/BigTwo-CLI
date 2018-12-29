@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		36CC35F721D80B6E00A6F457 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 36CC35F621D80B6E00A6F457 /* main.cpp */; };
+		36CC360021D80BFD00A6F457 /* Card.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 36CC35FE21D80BFD00A6F457 /* Card.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,9 @@
 /* Begin PBXFileReference section */
 		36CC35F321D80B6E00A6F457 /* BigTwo-CLI */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "BigTwo-CLI"; sourceTree = BUILT_PRODUCTS_DIR; };
 		36CC35F621D80B6E00A6F457 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		36CC35FE21D80BFD00A6F457 /* Card.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Card.cpp; sourceTree = "<group>"; };
+		36CC35FF21D80BFD00A6F457 /* Card.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Card.hpp; sourceTree = "<group>"; };
+		36CC360321D80F4400A6F457 /* Globals.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Globals.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +61,20 @@
 		36CC35F521D80B6E00A6F457 /* BigTwo-CLI */ = {
 			isa = PBXGroup;
 			children = (
+				36CC35FD21D80BB800A6F457 /* Game */,
 				36CC35F621D80B6E00A6F457 /* main.cpp */,
+				36CC360321D80F4400A6F457 /* Globals.h */,
 			);
 			path = "BigTwo-CLI";
+			sourceTree = "<group>";
+		};
+		36CC35FD21D80BB800A6F457 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				36CC35FE21D80BFD00A6F457 /* Card.cpp */,
+				36CC35FF21D80BFD00A6F457 /* Card.hpp */,
+			);
+			path = Game;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,6 +134,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				36CC35F721D80B6E00A6F457 /* main.cpp in Sources */,
+				36CC360021D80BFD00A6F457 /* Card.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,6 +256,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = "BigTwo-CLI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -248,6 +265,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = "BigTwo-CLI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
