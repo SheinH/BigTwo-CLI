@@ -10,7 +10,7 @@
 #define Card_hpp
 #include <stdio.h>
 #include <Globals.h>
-#include <Game/Playables.hpp>
+#include <Game/Playable.hpp>
 
 const int SUIT_MAX(4);
 const int RANK_MAX(13);
@@ -21,9 +21,19 @@ public:
     bool operator<(const Card& c) const;
     bool operator>(const Card& c) const;
     bool operator==(const Card& c) const;
-    virtual bool beats(const Playable& other) const;
+    virtual bool beats(const Playable& other) const override;
+    int getRank() const;
+    int getSuit() const;
+
+    const Card &operator[](int i) const override;
+
+    size_t size() const override;
+
+    const vector<Card> &getCards() const override;
+
 private:
     int rank, suit;
+    static string rankToString(int rank);
     int getPowerRank() const;
     friend ostream & operator<<(ostream &os, const Card& c);
 };
